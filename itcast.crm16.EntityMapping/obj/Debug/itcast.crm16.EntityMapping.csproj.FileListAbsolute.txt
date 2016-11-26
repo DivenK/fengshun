@@ -1,0 +1,64 @@
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+G:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+G:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+G:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb
+E:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.xml
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+E:\源码\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.xml
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.xml
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb

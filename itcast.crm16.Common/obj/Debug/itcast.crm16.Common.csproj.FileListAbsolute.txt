@@ -1,0 +1,21 @@
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.pdb
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.dll
+F:\上课视频\16期班\2014-11-5 MVC大项目第10天 在线聊天服务历史记录处理\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.pdb
+G:\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.dll
+G:\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.pdb
+G:\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.dll
+G:\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.pdb
+E:\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.dll
+E:\源码\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.pdb
+E:\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.dll
+E:\源码\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.pdb
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.pdb
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.csprojResolveAssemblyReference.cache
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.dll
+C:\Users\Devink\Desktop\丰顺商会\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.pdb
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Common\bin\Debug\itcast.crm16.Common.pdb
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.dll
+D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Common\obj\Debug\itcast.crm16.Common.pdb

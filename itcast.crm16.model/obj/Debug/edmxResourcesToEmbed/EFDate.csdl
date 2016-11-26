@@ -1,0 +1,146 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="FS_SiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Manage">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Title" />
+      <PropertyRef Name="Conter" />
+      <PropertyRef Name="CreateTime" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="Praise" />
+      <PropertyRef Name="Look" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Conter" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Praise" Type="Int32" Nullable="false" />
+    <Property Name="Look" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="New">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Conent" />
+      <PropertyRef Name="IsComment" />
+      <PropertyRef Name="IsDelete" />
+      <PropertyRef Name="Author" />
+      <PropertyRef Name="CreatTime" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="Praise" />
+      <PropertyRef Name="Look" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Conent" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsComment" Type="Boolean" Nullable="false" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+    <Property Name="Author" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TypeId" Type="Int32" />
+    <Property Name="CreatTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Praise" Type="Int32" Nullable="false" />
+    <Property Name="Look" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="NewType">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="TypeName" />
+      <PropertyRef Name="CreatTime" />
+      <PropertyRef Name="Creator" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+      <PropertyRef Name="UserName" />
+      <PropertyRef Name="UserPwd" />
+      <PropertyRef Name="CreatTime" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="UserName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="UserPwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreatTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="VipUser">
+    <Key>
+      <PropertyRef Name="id" />
+      <PropertyRef Name="VipName" />
+      <PropertyRef Name="VipPwd" />
+      <PropertyRef Name="Company" />
+      <PropertyRef Name="IsDelete" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="VipName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="VipPwd" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Company" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CreatTime" Type="DateTime" Precision="3" />
+    <Property Name="IsDelete" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="FS_SiteEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Manage" EntityType="Self.Manage" />
+    <EntitySet Name="New" EntityType="Self.New" />
+    <EntitySet Name="NewType" EntityType="Self.NewType" />
+    <EntitySet Name="User" EntityType="Self.User" />
+    <EntitySet Name="VipUser" EntityType="Self.VipUser" />
+    <EntitySet Name="sysMenus" EntityType="FS_SiteModel.sysMenus" />
+    <EntitySet Name="sysUserInfo" EntityType="FS_SiteModel.sysUserInfo" />
+  </EntityContainer>
+  <EntityType Name="sysMenus">
+    <Key>
+      <PropertyRef Name="mID" />
+    </Key>
+    <Property Name="mID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mParentID" Type="Int32" Nullable="false" />
+    <Property Name="mName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="mUrl" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="mArea" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mController" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mSortid" Type="Int32" Nullable="false" />
+    <Property Name="mStatus" Type="Int32" Nullable="false" />
+    <Property Name="mPicname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="mLevel" Type="Int32" Nullable="false" />
+    <Property Name="mExp1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mExp2" Type="Int32" />
+    <Property Name="mCreatorID" Type="Int32" Nullable="false" />
+    <Property Name="mCreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="mUpdateID" Type="Int32" />
+    <Property Name="mUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="sysUserInfo">
+    <Key>
+      <PropertyRef Name="uID" />
+    </Key>
+    <Property Name="uID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uLoginName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="uLoginPWD" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="uRealName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="uTelphone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uMobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="uEmial" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="uQQ" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="uGender" Type="Int32" Nullable="false" />
+    <Property Name="uStatus" Type="Int32" Nullable="false" />
+    <Property Name="uCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="uDepID" Type="Int32" />
+    <Property Name="uWorkGroupID" Type="Int32" />
+    <Property Name="uRemark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="uCreatorID" Type="Int32" Nullable="false" />
+    <Property Name="uCreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="uUpdateID" Type="Int32" />
+    <Property Name="uUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+</Schema>

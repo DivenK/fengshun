@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="JKCRMModelStoreContainer" CdmEntityContainer="JKCRMEntities">
+    <EntitySetMapping Name="Manage">
+      <EntityTypeMapping TypeName="JKCRMModel.Manage">
+        <MappingFragment StoreEntitySet="Manage">
+          <ScalarProperty Name="Look" ColumnName="Look" />
+          <ScalarProperty Name="Praise" ColumnName="Praise" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreateTime" ColumnName="CreateTime" />
+          <ScalarProperty Name="Conter" ColumnName="Conter" />
+          <ScalarProperty Name="Title" ColumnName="Title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="New">
+      <EntityTypeMapping TypeName="JKCRMModel.New">
+        <MappingFragment StoreEntitySet="New">
+          <ScalarProperty Name="Look" ColumnName="Look" />
+          <ScalarProperty Name="Praise" ColumnName="Praise" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreatTime" ColumnName="CreatTime" />
+          <ScalarProperty Name="TypeId" ColumnName="TypeId" />
+          <ScalarProperty Name="Author" ColumnName="Author" />
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="IsComment" ColumnName="IsComment" />
+          <ScalarProperty Name="Conent" ColumnName="Conent" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NewType">
+      <EntityTypeMapping TypeName="JKCRMModel.NewType">
+        <MappingFragment StoreEntitySet="NewType">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="Creator" ColumnName="Creator" />
+          <ScalarProperty Name="CreatTime" ColumnName="CreatTime" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="User">
+      <EntityTypeMapping TypeName="JKCRMModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreatTime" ColumnName="CreatTime" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="UserPwd" ColumnName="UserPwd" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="VipUser">
+      <EntityTypeMapping TypeName="JKCRMModel.VipUser">
+        <MappingFragment StoreEntitySet="VipUser">
+          <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
+          <ScalarProperty Name="CreatTime" ColumnName="CreatTime" />
+          <ScalarProperty Name="Company" ColumnName="Company" />
+          <ScalarProperty Name="VipPwd" ColumnName="VipPwd" />
+          <ScalarProperty Name="VipName" ColumnName="VipName" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
