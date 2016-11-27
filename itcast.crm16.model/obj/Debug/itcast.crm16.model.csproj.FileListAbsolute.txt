@@ -50,3 +50,15 @@ D:\Fly Deam\丰顺商会\CRM\itcast.crm16.model\bin\Debug\zh-Hans\EntityFramewor
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.model\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.model\obj\Debug\itcast.crm16.model.dll
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.model\obj\Debug\itcast.crm16.model.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\itcast.crm16.model.dll.config
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\itcast.crm16.model.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\itcast.crm16.model.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\EntityFramework.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\System.Web.Mvc.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\EntityFramework.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\System.Web.Mvc.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.csprojResolveAssemblyReference.cache
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.pdb

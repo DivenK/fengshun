@@ -47,3 +47,16 @@ D:\Fly Deam\丰顺商会\CRM\itcast.crm16.IRepository\bin\Debug\zh-Hans\System.W
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.dll
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.IRepository.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.IRepository.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.model.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\EntityFramework.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\System.Web.Mvc.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.model.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\EntityFramework.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\System.Web.Mvc.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.csprojResolveAssemblyReference.cache
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.dll
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.pdb

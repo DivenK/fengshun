@@ -156,6 +156,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Areas\admin\Scripts\New.js" />
     <Content Include="Content\admin\bootstrap\css\bootstrap-responsive.css" />
     <Content Include="Content\admin\bootstrap\css\bootstrap-responsive.min.css" />
     <Content Include="Content\admin\bootstrap\css\bootstrap.css" />
