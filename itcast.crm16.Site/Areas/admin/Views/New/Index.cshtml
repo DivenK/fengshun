@@ -360,29 +360,8 @@
 										    
 										    <div class="am-form-group">
 										    	<div class="am-g">
-											      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ipt-email-1">内容</label>
-											      <input class="am-u-md-10 form-control" id="doc-ipt-email-1" placeholder="输入电子邮件">
-											    </div>
-										    </div>
-										    
-										    <div class="am-form-group">
-										    	<div class="am-g">
-											      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ipt-pwd-1">密码</label>
-											      <input type="password" class="am-u-md-10" id="doc-ipt-pwd-1" placeholder="设置个密码吧">
-											    </div>
-										    </div>
-										    
-										    <div class="am-form-group">
-										    	<div class="am-g">
-											      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ipt-phd-1">提示</label>
-											      <input class="am-u-md-10 form-control" id="doc-ipt-phd-1" placeholder="提示信息">
-											    </div>
-										    </div>
-										    
-										    <div class="am-form-group">
-										    	<div class="am-g">
-											      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ta-1">文本域</label>
-											      <textarea class="am-u-md-10 form-control" rows="5" id="doc-ta-1"></textarea>
+											      <label class="am-u-md-2 am-md-text-right am-padding-left-0" for="doc-ta-1">内容</label>
+											      <textarea class="am-u-md-10 form-control" rows="5" id="doc-ta-1" style="height:400px"></textarea>
 										    	</div>
 										    </div>
 										</form>
@@ -395,3 +374,14 @@
     </div>
 </div>
 <script src="~/Areas/admin/Scripts/New.js"></script>
+
+@section Scripts{
+<script type="text/javascript">  
+        var editorOption = {  
+            initialFrameWidth: 600,  
+            initialFrameHeight: 400  
+        };  
+        var editor = new baidu.editor.ui.Editor(editorOption);  
+        editor.render('doc-ta-1');  //绑定id
+    </script>  
+    }@*//要用这个包起来*@

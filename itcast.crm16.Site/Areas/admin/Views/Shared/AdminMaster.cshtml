@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="~/Content/themes/templateUI/assets/css/page/typography.css" />
     <link rel="stylesheet" href="~/Content/themes/templateUI/assets/css/page/form.css" />
     <link rel="stylesheet" href="~/Content/themes/templateUI/assets/css/component.css" />
-   <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/jquery-2.1.0.js"></script>
-    <script type="text/javascript" src="~/Scripts/knockout-3.4.0.js"></script> 
+    <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/jquery-2.1.0.js"></script>
+    <script type="text/javascript" src="~/Scripts/knockout-3.4.0.js"></script>
 </head>
 <body>
     <!-- Begin page -->
@@ -33,7 +33,7 @@
                 <li class="inform"><i class="am-icon-bell-o" aria-hidden="true"></i></li>
                 <li class="hidden-xs am-hide-sm-only">
                     <form role="search" class="app-search">
-                      <label></label>
+                        <label></label>
                     </form>
                 </li>
             </ul>
@@ -57,7 +57,7 @@
                         <img src="~/Content/themes/templateUI/assets/img/avatar-1.jpg" alt="user-img" title="Mat Helme" class="img-circle img-thumbnail img-responsive">
                         <div class="user-status offline">@*<i class="am-icon-dot-circle-o" aria-hidden="true"></i>*@</div>
                     </div>
-                    <h5><a href="#">@(ViewBag.User==null?"Manage":"SupperManage")</a> </h5>
+                    <h5><a href="#">@(ViewBag.User == null ? "Manage" : "SupperManage")</a> </h5>
                     <ul class="list-inline">
                         <li>
                             <a href="#">
@@ -91,7 +91,7 @@
                                         <li class="admin-parent">
                                             <a class="am-cf" data-am-collapse="{target:'@("#collapse-nav"+nav)'}"><span class="@item.mPicname"></span> @item.mName <span class=" am-fr am-margin-right"></span></a>
                                             <ul class="am-list admin-sidebar-sub am-collapse am-in" id="@("collapse-nav"+nav)" data-attr="@(nav++)">
-                                                
+
                                                 @foreach (var subItem in mList)
                                                 {
                                                     if (item.mID == subItem.mParentID)
@@ -109,12 +109,12 @@
 
                     }
                     @*<li class="admin-parent">
-                        <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class=""></span> 表格 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
-                        <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
-                            <li><a href="html/table_basic.html" class="am-cf"> 基本表格</span></a></li>
-                            <li><a href="html/table_complete.html">完整表格</a></li>
-                        </ul>
-                    </li>*@
+                            <a class="am-cf" data-am-collapse="{target: '#collapse-nav1'}"><span class=""></span> 表格 <span class="am-icon-angle-right am-fr am-margin-right"></span></a>
+                            <ul class="am-list am-collapse admin-sidebar-sub am-in" id="collapse-nav1">
+                                <li><a href="html/table_basic.html" class="am-cf"> 基本表格</span></a></li>
+                                <li><a href="html/table_complete.html">完整表格</a></li>
+                            </ul>
+                        </li>*@
                 </ul>
             </div>
         </div>
@@ -129,16 +129,18 @@
         <div class="content-page">
             <!-- Start content -->
             @RenderBody()
+           
         </div>
         <!-- end right Content here -->
         <!--</div>-->
     </div>
-    </div>
+    @Scripts.Render("~/bundles/jqueryval","~/Content/ueditor/ueditor.config.js","~/Content/ueditor/ueditor.all.js")   //通过路径引入 对ueditor.config.js,ueditor.all.js的引用。
+    @RenderSection("Scripts",false)
 
     <!-- navbar -->
     <a href="admin-offcanvas" class="am-icon-btn am-icon-th-list am-show-sm-only admin-menu" data-am-offcanvas="{target: '#admin-offcanvas'}"><!--<i class="fa fa-bars" aria-hidden="true"></i>--></a>
 
-     <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/amazeui.min.js"></script>
+    <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/amazeui.min.js"></script>
     <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/app.js"></script>
     <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/blockUI.js"></script>
     <script type="text/javascript" src="~/Content/themes/templateUI/assets/js/charts/echarts.min.js"></script>

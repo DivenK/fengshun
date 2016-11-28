@@ -312,8 +312,9 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\itcast.crm16.model.p
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\itcast.crm16.WebHelper.pdb
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\Autofac.xml
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\Autofac.Integration.Mvc.xml
-D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\EntityFramework.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\Newtonsoft.Json.pdb
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\Newtonsoft.Json.xml
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\EntityFramework.xml
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\System.Net.Http.Formatting.xml
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\System.Web.Http.xml
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\System.Web.Http.WebHost.xml
