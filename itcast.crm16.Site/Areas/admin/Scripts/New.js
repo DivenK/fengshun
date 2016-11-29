@@ -5,13 +5,16 @@
  
     $('#addNews').on('click', function (e) {
         $modal.width=420;
-      var $target = $(e.target);
+        var $target = $(e.target);
+        //使用详情看 http://amazeui.org/javascript/modal
       if (($target).hasClass('js-modal-open')) {
-        $modal.modal();
-      } else if (($target).hasClass('js-modal-close')) {
-        $modal.modal('close');
-      } else {
-        $modal.modal('toggle');
+          $modal.modal({
+              width: 900,
+              height:800
+          });
       }
+    });
+    $('#Cancel').on('click', function () {
+        $modal.modal('close');
     });
 })

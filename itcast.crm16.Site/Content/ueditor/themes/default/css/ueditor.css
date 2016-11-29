@@ -1029,7 +1029,7 @@ div.edui-box {
 
 /* 弹出菜单 */
 .edui-default .edui-popup {
-    z-index: 9999;
+    z-index: 1110;
     background-color: #ffffff;
     width:auto;
     height:auto;
