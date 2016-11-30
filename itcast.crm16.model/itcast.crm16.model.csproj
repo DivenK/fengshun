@@ -124,7 +124,13 @@
     <Compile Include="sysMenus.cs">
       <DependentUpon>EFDate.tt</DependentUpon>
     </Compile>
+    <Compile Include="sysRole.cs">
+      <DependentUpon>EFDate.tt</DependentUpon>
+    </Compile>
     <Compile Include="sysUserInfo.cs">
+      <DependentUpon>EFDate.tt</DependentUpon>
+    </Compile>
+    <Compile Include="sysUserInfo_Role.cs">
       <DependentUpon>EFDate.tt</DependentUpon>
     </Compile>
     <Compile Include="User.cs">

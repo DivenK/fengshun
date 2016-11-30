@@ -105,6 +105,7 @@ D:\Fly Deam\丰顺商会\CRM\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.dll
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.WebHelper.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.WebHelper.pdb
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\Autofac.dll
@@ -127,6 +128,5 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\S
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
-D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.pdb

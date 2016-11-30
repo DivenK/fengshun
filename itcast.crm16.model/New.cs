@@ -25,5 +25,6 @@ namespace itcast.crm16.model
         public string Creator { get; set; }
         public int Praise { get; set; }
         public int Look { get; set; }
+        public int display { get; set; }
     }
 }

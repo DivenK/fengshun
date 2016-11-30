@@ -1,6 +1,79 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-  <EntityContainerMapping StorageEntityContainer="FS_SiteModelStoreContainer" CdmEntityContainer="FS_SiteEntities">
+  <EntityContainerMapping StorageEntityContainer="FS_SiteModelStoreContainer" CdmEntityContainer="FS_SiteEntities1">
+    <EntitySetMapping Name="sysMenus">
+      <EntityTypeMapping TypeName="FS_SiteModel.sysMenus">
+        <MappingFragment StoreEntitySet="sysMenus">
+          <ScalarProperty Name="mID" ColumnName="mID" />
+          <ScalarProperty Name="mParentID" ColumnName="mParentID" />
+          <ScalarProperty Name="mName" ColumnName="mName" />
+          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
+          <ScalarProperty Name="mArea" ColumnName="mArea" />
+          <ScalarProperty Name="mController" ColumnName="mController" />
+          <ScalarProperty Name="mAction" ColumnName="mAction" />
+          <ScalarProperty Name="mSortid" ColumnName="mSortid" />
+          <ScalarProperty Name="mStatus" ColumnName="mStatus" />
+          <ScalarProperty Name="mPicname" ColumnName="mPicname" />
+          <ScalarProperty Name="mLevel" ColumnName="mLevel" />
+          <ScalarProperty Name="mExp1" ColumnName="mExp1" />
+          <ScalarProperty Name="mExp2" ColumnName="mExp2" />
+          <ScalarProperty Name="mCreatorID" ColumnName="mCreatorID" />
+          <ScalarProperty Name="mCreateTime" ColumnName="mCreateTime" />
+          <ScalarProperty Name="mUpdateID" ColumnName="mUpdateID" />
+          <ScalarProperty Name="mUpdateTime" ColumnName="mUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRole">
+      <EntityTypeMapping TypeName="FS_SiteModel.sysRole">
+        <MappingFragment StoreEntitySet="sysRole">
+          <ScalarProperty Name="rID" ColumnName="rID" />
+          <ScalarProperty Name="eDepID" ColumnName="eDepID" />
+          <ScalarProperty Name="RoleType" ColumnName="RoleType" />
+          <ScalarProperty Name="rName" ColumnName="rName" />
+          <ScalarProperty Name="rRemark" ColumnName="rRemark" />
+          <ScalarProperty Name="rSort" ColumnName="rSort" />
+          <ScalarProperty Name="rStatus" ColumnName="rStatus" />
+          <ScalarProperty Name="rCreatorID" ColumnName="rCreatorID" />
+          <ScalarProperty Name="rCreateTime" ColumnName="rCreateTime" />
+          <ScalarProperty Name="rUpdateID" ColumnName="rUpdateID" />
+          <ScalarProperty Name="rUpdateTime" ColumnName="rUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserInfo">
+      <EntityTypeMapping TypeName="FS_SiteModel.sysUserInfo">
+        <MappingFragment StoreEntitySet="sysUserInfo">
+          <ScalarProperty Name="uID" ColumnName="uID" />
+          <ScalarProperty Name="uLoginName" ColumnName="uLoginName" />
+          <ScalarProperty Name="uLoginPWD" ColumnName="uLoginPWD" />
+          <ScalarProperty Name="uRealName" ColumnName="uRealName" />
+          <ScalarProperty Name="uTelphone" ColumnName="uTelphone" />
+          <ScalarProperty Name="uMobile" ColumnName="uMobile" />
+          <ScalarProperty Name="uEmial" ColumnName="uEmial" />
+          <ScalarProperty Name="uQQ" ColumnName="uQQ" />
+          <ScalarProperty Name="uGender" ColumnName="uGender" />
+          <ScalarProperty Name="uStatus" ColumnName="uStatus" />
+          <ScalarProperty Name="uCompanyID" ColumnName="uCompanyID" />
+          <ScalarProperty Name="uDepID" ColumnName="uDepID" />
+          <ScalarProperty Name="uWorkGroupID" ColumnName="uWorkGroupID" />
+          <ScalarProperty Name="uRemark" ColumnName="uRemark" />
+          <ScalarProperty Name="uCreatorID" ColumnName="uCreatorID" />
+          <ScalarProperty Name="uCreateTime" ColumnName="uCreateTime" />
+          <ScalarProperty Name="uUpdateID" ColumnName="uUpdateID" />
+          <ScalarProperty Name="uUpdateTime" ColumnName="uUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserInfo_Role">
+      <EntityTypeMapping TypeName="FS_SiteModel.sysUserInfo_Role">
+        <MappingFragment StoreEntitySet="sysUserInfo_Role">
+          <ScalarProperty Name="urID" ColumnName="urID" />
+          <ScalarProperty Name="uID" ColumnName="uID" />
+          <ScalarProperty Name="rID" ColumnName="rID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="Manage">
       <EntityTypeMapping TypeName="FS_SiteModel.Manage">
         <MappingFragment StoreEntitySet="Manage">
@@ -29,6 +102,7 @@
           <ScalarProperty Name="Creator" ColumnName="Creator" />
           <ScalarProperty Name="Praise" ColumnName="Praise" />
           <ScalarProperty Name="Look" ColumnName="Look" />
+          <ScalarProperty Name="display" ColumnName="display" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -64,53 +138,6 @@
           <ScalarProperty Name="Company" ColumnName="Company" />
           <ScalarProperty Name="CreatTime" ColumnName="CreatTime" />
           <ScalarProperty Name="IsDelete" ColumnName="IsDelete" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="sysMenus">
-      <EntityTypeMapping TypeName="FS_SiteModel.sysMenus">
-        <MappingFragment StoreEntitySet="sysMenus">
-          <ScalarProperty Name="mUpdateTime" ColumnName="mUpdateTime" />
-          <ScalarProperty Name="mUpdateID" ColumnName="mUpdateID" />
-          <ScalarProperty Name="mCreateTime" ColumnName="mCreateTime" />
-          <ScalarProperty Name="mCreatorID" ColumnName="mCreatorID" />
-          <ScalarProperty Name="mExp2" ColumnName="mExp2" />
-          <ScalarProperty Name="mExp1" ColumnName="mExp1" />
-          <ScalarProperty Name="mLevel" ColumnName="mLevel" />
-          <ScalarProperty Name="mPicname" ColumnName="mPicname" />
-          <ScalarProperty Name="mStatus" ColumnName="mStatus" />
-          <ScalarProperty Name="mSortid" ColumnName="mSortid" />
-          <ScalarProperty Name="mAction" ColumnName="mAction" />
-          <ScalarProperty Name="mController" ColumnName="mController" />
-          <ScalarProperty Name="mArea" ColumnName="mArea" />
-          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
-          <ScalarProperty Name="mName" ColumnName="mName" />
-          <ScalarProperty Name="mParentID" ColumnName="mParentID" />
-          <ScalarProperty Name="mID" ColumnName="mID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="sysUserInfo">
-      <EntityTypeMapping TypeName="FS_SiteModel.sysUserInfo">
-        <MappingFragment StoreEntitySet="sysUserInfo">
-          <ScalarProperty Name="uUpdateTime" ColumnName="uUpdateTime" />
-          <ScalarProperty Name="uUpdateID" ColumnName="uUpdateID" />
-          <ScalarProperty Name="uCreateTime" ColumnName="uCreateTime" />
-          <ScalarProperty Name="uCreatorID" ColumnName="uCreatorID" />
-          <ScalarProperty Name="uRemark" ColumnName="uRemark" />
-          <ScalarProperty Name="uWorkGroupID" ColumnName="uWorkGroupID" />
-          <ScalarProperty Name="uDepID" ColumnName="uDepID" />
-          <ScalarProperty Name="uCompanyID" ColumnName="uCompanyID" />
-          <ScalarProperty Name="uStatus" ColumnName="uStatus" />
-          <ScalarProperty Name="uGender" ColumnName="uGender" />
-          <ScalarProperty Name="uQQ" ColumnName="uQQ" />
-          <ScalarProperty Name="uEmial" ColumnName="uEmial" />
-          <ScalarProperty Name="uMobile" ColumnName="uMobile" />
-          <ScalarProperty Name="uTelphone" ColumnName="uTelphone" />
-          <ScalarProperty Name="uRealName" ColumnName="uRealName" />
-          <ScalarProperty Name="uLoginPWD" ColumnName="uLoginPWD" />
-          <ScalarProperty Name="uLoginName" ColumnName="uLoginName" />
-          <ScalarProperty Name="uID" ColumnName="uID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

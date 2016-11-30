@@ -708,6 +708,7 @@
     <Content Include="Content\themes\templateUI\assets\css\admin.css" />
     <Content Include="Content\themes\templateUI\assets\css\amazeui.css" />
     <Content Include="Content\themes\templateUI\assets\css\amazeui.jqgrid.min.css" />
+    <Content Include="Content\themes\templateUI\assets\css\amazeui.page.css" />
     <Content Include="Content\themes\templateUI\assets\css\component.css" />
     <Content Include="Content\themes\templateUI\assets\css\core.css" />
     <Content Include="Content\themes\templateUI\assets\css\font-awesome.css" />
@@ -725,6 +726,7 @@
     <Content Include="Content\themes\templateUI\assets\img\inform.png" />
     <Content Include="Content\themes\templateUI\assets\img\rember.png" />
     <Content Include="Content\themes\templateUI\assets\img\search.png" />
+    <Content Include="Content\themes\templateUI\assets\js\amazeui.page.js" />
     <Content Include="Content\themes\templateUI\assets\js\charts\columnarChart.js" />
     <Content Include="Content\themes\templateUI\assets\js\charts\echarts.min.js" />
     <Content Include="Content\themes\templateUI\assets\js\charts\indexChart.js" />

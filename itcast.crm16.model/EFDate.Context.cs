@@ -13,10 +13,10 @@ namespace itcast.crm16.model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class FS_SiteEntities : DbContext
+    public partial class FS_SiteEntities1 : DbContext
     {
-        public FS_SiteEntities()
-            : base("name=FS_SiteEntities")
+        public FS_SiteEntities1()
+            : base("name=FS_SiteEntities1")
         {
         }
     
@@ -25,12 +25,14 @@ namespace itcast.crm16.model
             throw new UnintentionalCodeFirstException();
         }
     
+        public DbSet<sysMenus> sysMenus { get; set; }
+        public DbSet<sysRole> sysRole { get; set; }
+        public DbSet<sysUserInfo> sysUserInfo { get; set; }
+        public DbSet<sysUserInfo_Role> sysUserInfo_Role { get; set; }
         public DbSet<Manage> Manage { get; set; }
         public DbSet<New> New { get; set; }
         public DbSet<NewType> NewType { get; set; }
         public DbSet<User> User { get; set; }
         public DbSet<VipUser> VipUser { get; set; }
-        public DbSet<sysMenus> sysMenus { get; set; }
-        public DbSet<sysUserInfo> sysUserInfo { get; set; }
     }
 }

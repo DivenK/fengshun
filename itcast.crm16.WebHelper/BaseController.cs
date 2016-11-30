@@ -32,11 +32,15 @@ namespace itcast.crm16.WebHelper
         protected IsysUserInfoServices userinfoSer;
         protected INewServices news;
         protected INewTypeServices newsType;
+        protected int pageSize=10;
+        protected int TotalPage;//总叶数
+        protected int PageCount;//有多少页
 
         public BaseController(IsysMenusServices mSer)
         {
             menuSer = mSer;
             var list = menuSer.QueryWhere(c => c.mStatus == 0).OrderBy(c => c.mSortid).ToList();
+
 
             //获取当前左边的菜单
             // var permissMenus = menuSer.RunProc<sysMenus>("USP_GetMenusForUserid16 " + UserMgr.GetUserInfo().uID);
@@ -85,6 +89,13 @@ namespace itcast.crm16.WebHelper
 
             ViewBag.status = clist;
 
+        }
+        /// <summary>
+        /// 获取分页码数( 使用前记得给 TotalPage 和 pageSize 赋值)
+        /// </summary>
+        /// <returns></returns>
+        protected int GetPageCount() {
+            return (int)Math.Ceiling(TotalPage * 1.0 / pageSize);
         }
     }
 }

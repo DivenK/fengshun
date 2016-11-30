@@ -36,6 +36,7 @@
       <PropertyRef Name="Creator" />
       <PropertyRef Name="Praise" />
       <PropertyRef Name="Look" />
+      <PropertyRef Name="display" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -48,6 +49,7 @@
     <Property Name="Creator" Type="nvarchar" MaxLength="50" Nullable="false" />
     <Property Name="Praise" Type="int" Nullable="false" />
     <Property Name="Look" Type="int" Nullable="false" />
+    <Property Name="display" Type="int" Nullable="false" />
   </EntityType>
   <!--生成过程中发现错误:
 警告 6002: 表/视图“FS_Site.dbo.NewType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
@@ -87,6 +89,22 @@
     <Property Name="mUpdateID" Type="int" />
     <Property Name="mUpdateTime" Type="datetime" Nullable="false" />
   </EntityType>
+  <EntityType Name="sysRole">
+    <Key>
+      <PropertyRef Name="rID" />
+    </Key>
+    <Property Name="rID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="eDepID" Type="int" />
+    <Property Name="RoleType" Type="int" Nullable="false" />
+    <Property Name="rName" Type="nvarchar" MaxLength="50" />
+    <Property Name="rRemark" Type="nvarchar" MaxLength="100" />
+    <Property Name="rSort" Type="int" Nullable="false" />
+    <Property Name="rStatus" Type="int" Nullable="false" />
+    <Property Name="rCreatorID" Type="int" Nullable="false" />
+    <Property Name="rCreateTime" Type="datetime" Nullable="false" />
+    <Property Name="rUpdateID" Type="int" />
+    <Property Name="rUpdateTime" Type="datetime" Nullable="false" />
+  </EntityType>
   <EntityType Name="sysUserInfo">
     <Key>
       <PropertyRef Name="uID" />
@@ -109,6 +127,14 @@
     <Property Name="uCreateTime" Type="datetime" Nullable="false" />
     <Property Name="uUpdateID" Type="int" />
     <Property Name="uUpdateTime" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysUserInfo_Role">
+    <Key>
+      <PropertyRef Name="urID" />
+    </Key>
+    <Property Name="urID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="uID" Type="int" Nullable="false" />
+    <Property Name="rID" Type="int" Nullable="false" />
   </EntityType>
   <!--生成过程中发现错误:
 警告 6002: 表/视图“FS_Site.dbo.User”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
@@ -144,9 +170,35 @@
     <Property Name="CreatTime" Type="datetime" />
     <Property Name="IsDelete" Type="int" Nullable="false" />
   </EntityType>
+  <Association Name="FK_sysUserInfo_Role_sysRole">
+    <End Role="sysRole" Type="Self.sysRole" Multiplicity="1" />
+    <End Role="sysUserInfo_Role" Type="Self.sysUserInfo_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysRole">
+        <PropertyRef Name="rID" />
+      </Principal>
+      <Dependent Role="sysUserInfo_Role">
+        <PropertyRef Name="rID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserInfo_Role_sysUserInfo">
+    <End Role="sysUserInfo" Type="Self.sysUserInfo" Multiplicity="1" />
+    <End Role="sysUserInfo_Role" Type="Self.sysUserInfo_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUserInfo">
+        <PropertyRef Name="uID" />
+      </Principal>
+      <Dependent Role="sysUserInfo_Role">
+        <PropertyRef Name="uID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="FS_SiteModelStoreContainer">
     <EntitySet Name="sysMenus" EntityType="Self.sysMenus" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysRole" EntityType="Self.sysRole" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysUserInfo" EntityType="Self.sysUserInfo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="sysUserInfo_Role" EntityType="Self.sysUserInfo_Role" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Manage" EntityType="Self.Manage" store:Type="Tables" store:Schema="dbo">
       <DefiningQuery>SELECT 
 [Manage].[id] AS [id], 
@@ -171,7 +223,8 @@ FROM [dbo].[Manage] AS [Manage]</DefiningQuery>
 [New].[CreatTime] AS [CreatTime], 
 [New].[Creator] AS [Creator], 
 [New].[Praise] AS [Praise], 
-[New].[Look] AS [Look]
+[New].[Look] AS [Look], 
+[New].[display] AS [display]
 FROM [dbo].[New] AS [New]</DefiningQuery>
     </EntitySet>
     <EntitySet Name="NewType" EntityType="Self.NewType" store:Type="Tables" store:Schema="dbo">
@@ -203,5 +256,13 @@ FROM [dbo].[User] AS [User]</DefiningQuery>
 [VipUser].[IsDelete] AS [IsDelete]
 FROM [dbo].[VipUser] AS [VipUser]</DefiningQuery>
     </EntitySet>
+    <AssociationSet Name="FK_sysUserInfo_Role_sysRole" Association="Self.FK_sysUserInfo_Role_sysRole">
+      <End Role="sysRole" EntitySet="sysRole" />
+      <End Role="sysUserInfo_Role" EntitySet="sysUserInfo_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserInfo_Role_sysUserInfo" Association="Self.FK_sysUserInfo_Role_sysUserInfo">
+      <End Role="sysUserInfo" EntitySet="sysUserInfo" />
+      <End Role="sysUserInfo_Role" EntitySet="sysUserInfo_Role" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

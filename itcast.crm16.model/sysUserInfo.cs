@@ -14,6 +14,11 @@ namespace itcast.crm16.model
     
     public partial class sysUserInfo
     {
+        public sysUserInfo()
+        {
+            this.sysUserInfo_Role = new HashSet<sysUserInfo_Role>();
+        }
+    
         public int uID { get; set; }
         public string uLoginName { get; set; }
         public string uLoginPWD { get; set; }
@@ -32,5 +37,7 @@ namespace itcast.crm16.model
         public System.DateTime uCreateTime { get; set; }
         public Nullable<int> uUpdateID { get; set; }
         public System.DateTime uUpdateTime { get; set; }
+    
+        public virtual ICollection<sysUserInfo_Role> sysUserInfo_Role { get; set; }
     }
 }

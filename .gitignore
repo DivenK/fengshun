@@ -187,9 +187,8 @@ FakesAssemblies/
 GeneratedArtifacts/
 _Pvt_Extensions/
 
-# package
-CK1.SUP.Presentation.APIWebHost/bower_components
-CK1.SUP.Presentation.APIWebHost/node_modules
 
-CK1.SUP.Presentation.APIWebHost/Logs
-
+*.dat
+*.dll
+*.pdb
+itcast.crm16.WebHelper/obj/Debug

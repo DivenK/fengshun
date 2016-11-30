@@ -59,6 +59,5 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\EntityFramewo
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\System.Web.Mvc.xml
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\zh-Hans\EntityFramework.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
-D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.model\obj\Debug\itcast.crm16.model.pdb

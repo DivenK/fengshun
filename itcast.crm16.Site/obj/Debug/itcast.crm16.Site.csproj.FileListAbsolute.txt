@@ -280,6 +280,7 @@ D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Site\bin\zh-Hans\System.Web.WebPages.R
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.dll
 D:\Fly Deam\丰顺商会\CRM\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.pdb
+D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\itcast.crm16.Site.dll.config
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\itcast.crm16.Site.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\itcast.crm16.Site.pdb
@@ -334,6 +335,5 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\zh-Hans\System.Web.R
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\zh-Hans\System.Web.WebPages.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\zh-Hans\System.Web.WebPages.Deployment.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\bin\zh-Hans\System.Web.WebPages.Razor.resources.dll
-D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Site\obj\Debug\itcast.crm16.Site.pdb

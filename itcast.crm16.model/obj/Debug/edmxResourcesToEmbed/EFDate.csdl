@@ -1,5 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FS_SiteModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="sysMenus">
+    <Key>
+      <PropertyRef Name="mID" />
+    </Key>
+    <Property Name="mID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="mParentID" Type="Int32" Nullable="false" />
+    <Property Name="mName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mUrl" Type="String" MaxLength="200" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="mArea" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mController" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="mSortid" Type="Int32" Nullable="false" />
+    <Property Name="mStatus" Type="Int32" Nullable="false" />
+    <Property Name="mPicname" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mLevel" Type="Int32" Nullable="false" />
+    <Property Name="mExp1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="mExp2" Type="Int32" />
+    <Property Name="mCreatorID" Type="Int32" Nullable="false" />
+    <Property Name="mCreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="mUpdateID" Type="Int32" />
+    <Property Name="mUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+  </EntityType>
+  <EntityType Name="sysRole">
+    <Key>
+      <PropertyRef Name="rID" />
+    </Key>
+    <Property Name="rID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="eDepID" Type="Int32" />
+    <Property Name="RoleType" Type="Int32" Nullable="false" />
+    <Property Name="rName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="rRemark" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="rSort" Type="Int32" Nullable="false" />
+    <Property Name="rStatus" Type="Int32" Nullable="false" />
+    <Property Name="rCreatorID" Type="Int32" Nullable="false" />
+    <Property Name="rCreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="rUpdateID" Type="Int32" />
+    <Property Name="rUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="sysUserInfo_Role" Relationship="Self.FK_sysUserInfo_Role_sysRole" FromRole="sysRole" ToRole="sysUserInfo_Role" />
+  </EntityType>
+  <EntityType Name="sysUserInfo">
+    <Key>
+      <PropertyRef Name="uID" />
+    </Key>
+    <Property Name="uID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uLoginName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="uLoginPWD" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="uRealName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="uTelphone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="uMobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+    <Property Name="uEmial" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="uQQ" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="uGender" Type="Int32" Nullable="false" />
+    <Property Name="uStatus" Type="Int32" Nullable="false" />
+    <Property Name="uCompanyID" Type="Int32" Nullable="false" />
+    <Property Name="uDepID" Type="Int32" />
+    <Property Name="uWorkGroupID" Type="Int32" />
+    <Property Name="uRemark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="uCreatorID" Type="Int32" Nullable="false" />
+    <Property Name="uCreateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="uUpdateID" Type="Int32" />
+    <Property Name="uUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
+    <NavigationProperty Name="sysUserInfo_Role" Relationship="Self.FK_sysUserInfo_Role_sysUserInfo" FromRole="sysUserInfo" ToRole="sysUserInfo_Role" />
+  </EntityType>
+  <EntityType Name="sysUserInfo_Role">
+    <Key>
+      <PropertyRef Name="urID" />
+    </Key>
+    <Property Name="urID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="uID" Type="Int32" Nullable="false" />
+    <Property Name="rID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="sysRole" Relationship="Self.FK_sysUserInfo_Role_sysRole" FromRole="sysUserInfo_Role" ToRole="sysRole" />
+    <NavigationProperty Name="sysUserInfo" Relationship="Self.FK_sysUserInfo_Role_sysUserInfo" FromRole="sysUserInfo_Role" ToRole="sysUserInfo" />
+  </EntityType>
   <EntityType Name="Manage">
     <Key>
       <PropertyRef Name="id" />
@@ -32,6 +105,7 @@
       <PropertyRef Name="Creator" />
       <PropertyRef Name="Praise" />
       <PropertyRef Name="Look" />
+      <PropertyRef Name="display" />
     </Key>
     <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
@@ -44,6 +118,7 @@
     <Property Name="Creator" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Praise" Type="Int32" Nullable="false" />
     <Property Name="Look" Type="Int32" Nullable="false" />
+    <Property Name="display" Type="Int32" Nullable="false" />
   </EntityType>
   <EntityType Name="NewType">
     <Key>
@@ -89,58 +164,47 @@
     <Property Name="CreatTime" Type="DateTime" Precision="3" />
     <Property Name="IsDelete" Type="Int32" Nullable="false" />
   </EntityType>
-  <EntityContainer Name="FS_SiteEntities" annotation:LazyLoadingEnabled="true">
+  <Association Name="FK_sysUserInfo_Role_sysRole">
+    <End Role="sysRole" Type="Self.sysRole" Multiplicity="1" />
+    <End Role="sysUserInfo_Role" Type="Self.sysUserInfo_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysRole">
+        <PropertyRef Name="rID" />
+      </Principal>
+      <Dependent Role="sysUserInfo_Role">
+        <PropertyRef Name="rID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sysUserInfo_Role_sysUserInfo">
+    <End Role="sysUserInfo" Type="Self.sysUserInfo" Multiplicity="1" />
+    <End Role="sysUserInfo_Role" Type="Self.sysUserInfo_Role" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysUserInfo">
+        <PropertyRef Name="uID" />
+      </Principal>
+      <Dependent Role="sysUserInfo_Role">
+        <PropertyRef Name="uID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="FS_SiteEntities1" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="sysMenus" EntityType="Self.sysMenus" />
+    <EntitySet Name="sysRole" EntityType="Self.sysRole" />
+    <EntitySet Name="sysUserInfo" EntityType="Self.sysUserInfo" />
+    <EntitySet Name="sysUserInfo_Role" EntityType="Self.sysUserInfo_Role" />
     <EntitySet Name="Manage" EntityType="Self.Manage" />
     <EntitySet Name="New" EntityType="Self.New" />
     <EntitySet Name="NewType" EntityType="Self.NewType" />
     <EntitySet Name="User" EntityType="Self.User" />
     <EntitySet Name="VipUser" EntityType="Self.VipUser" />
-    <EntitySet Name="sysMenus" EntityType="FS_SiteModel.sysMenus" />
-    <EntitySet Name="sysUserInfo" EntityType="FS_SiteModel.sysUserInfo" />
+    <AssociationSet Name="FK_sysUserInfo_Role_sysRole" Association="Self.FK_sysUserInfo_Role_sysRole">
+      <End Role="sysRole" EntitySet="sysRole" />
+      <End Role="sysUserInfo_Role" EntitySet="sysUserInfo_Role" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sysUserInfo_Role_sysUserInfo" Association="Self.FK_sysUserInfo_Role_sysUserInfo">
+      <End Role="sysUserInfo" EntitySet="sysUserInfo" />
+      <End Role="sysUserInfo_Role" EntitySet="sysUserInfo_Role" />
+    </AssociationSet>
   </EntityContainer>
-  <EntityType Name="sysMenus">
-    <Key>
-      <PropertyRef Name="mID" />
-    </Key>
-    <Property Name="mID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="mParentID" Type="Int32" Nullable="false" />
-    <Property Name="mName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="mUrl" Type="String" Nullable="false" MaxLength="200" FixedLength="false" Unicode="true" />
-    <Property Name="mArea" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="mController" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="mAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <Property Name="mSortid" Type="Int32" Nullable="false" />
-    <Property Name="mStatus" Type="Int32" Nullable="false" />
-    <Property Name="mPicname" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
-    <Property Name="mLevel" Type="Int32" Nullable="false" />
-    <Property Name="mExp1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="mExp2" Type="Int32" />
-    <Property Name="mCreatorID" Type="Int32" Nullable="false" />
-    <Property Name="mCreateTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="mUpdateID" Type="Int32" />
-    <Property Name="mUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
-  </EntityType>
-  <EntityType Name="sysUserInfo">
-    <Key>
-      <PropertyRef Name="uID" />
-    </Key>
-    <Property Name="uID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="uLoginName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="uLoginPWD" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="uRealName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
-    <Property Name="uTelphone" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
-    <Property Name="uMobile" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
-    <Property Name="uEmial" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
-    <Property Name="uQQ" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
-    <Property Name="uGender" Type="Int32" Nullable="false" />
-    <Property Name="uStatus" Type="Int32" Nullable="false" />
-    <Property Name="uCompanyID" Type="Int32" Nullable="false" />
-    <Property Name="uDepID" Type="Int32" />
-    <Property Name="uWorkGroupID" Type="Int32" />
-    <Property Name="uRemark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
-    <Property Name="uCreatorID" Type="Int32" Nullable="false" />
-    <Property Name="uCreateTime" Type="DateTime" Nullable="false" Precision="3" />
-    <Property Name="uUpdateID" Type="Int32" />
-    <Property Name="uUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
-  </EntityType>
 </Schema>
