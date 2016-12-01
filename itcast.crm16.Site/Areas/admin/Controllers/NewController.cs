@@ -21,6 +21,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         public ActionResult Index()
         {
             ViewBag.newList = news.QueryWhere(c => c.IsDelete == 0);
+            ViewBag.newsType = newsType.QueryWhere(c => c.IsDelete == 0);
             ViewBag.TotalPage = TotalPage = (ViewBag.newList as List<model.New>).Count;
             ViewBag.PageSize = pageSize;
             ViewBag.PageCount = GetPageCount();
@@ -33,7 +34,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [ValidateInput(false)]//防止对文本验证，保存不了HTML元素
-        public ActionResult UpdateNews(string Name, string Conent, int TypeId, int id)
+        public ActionResult UpdateNews(string Name,string Conent,int TypeId, int id)
         {
             model.New newModel = new model.New();
             newModel.Name = Name;
@@ -44,12 +45,13 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
             newModel.display = 0;
             newModel.Author = "User";
             newModel.Creator = "User";
+            newModel.CreatTime = DateTime.Now;
             try
             {
                 if (id > 0)
                 {
-                  
-                    news.Edit(newModel, new string[] { "Name", "Conent", "IsComment", "TypeId", "display" });
+
+                    news.Edit(newModel, new string[] { "Name", "Conent", "IsComment", "TypeId", "display"});
                 }
                 else
                 {
@@ -89,7 +91,6 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
             }
             return WriteError("删除失败:选择值参数为空，请在尝试");
         }
-
         /// <summary>
         /// 在网站显示状态
         /// </summary>
@@ -116,6 +117,33 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
                 }
             }
             return WriteError("设置失败:选择值参数为空，请在尝试");
+        }
+
+        public ActionResult GetModel(int id)
+        {
+            if (id>0)
+            {
+                var model = news.QueryWhere(c => c.IsDelete == 0 && c.id == id).FirstOrDefault();
+                return Json(model);
+            }
+            return WriteError("修改的索引不能小于0");
+        }
+
+        public ActionResult GetList(int index, int typeId)
+        {
+            int count=0;
+            var list= newsType.QueryWhere(c => c.IsDelete == 0);
+            var pagelist=news.NewPageList(index, typeId, out count).Select(c => new { 
+                c.id,
+                list.Where(s=>s.id==c.TypeId).First().TypeName,
+                c.Name,
+                c.Conent,
+                c.Author,
+                c.display,
+                c.CreatTime
+            });
+            var page = new { index = index, count=count};
+            return Json(new { page=page,rows=pagelist });
         }
     }
 }

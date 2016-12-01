@@ -70,3 +70,16 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IServices\bin\Debug\zh-Hans\E
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IServices\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IServices\obj\Debug\itcast.crm16.IServices.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IServices\obj\Debug\itcast.crm16.IServices.pdb
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\itcast.crm16.IServices.dll
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\itcast.crm16.IServices.pdb
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\itcast.crm16.model.dll
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\EntityFramework.dll
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\System.Web.Mvc.dll
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\itcast.crm16.model.pdb
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\EntityFramework.xml
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\System.Web.Mvc.xml
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\code\fengshun\itcast.crm16.IServices\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\code\fengshun\itcast.crm16.IServices\obj\Debug\itcast.crm16.IServices.csprojResolveAssemblyReference.cache
+D:\code\fengshun\itcast.crm16.IServices\obj\Debug\itcast.crm16.IServices.dll
+D:\code\fengshun\itcast.crm16.IServices\obj\Debug\itcast.crm16.IServices.pdb

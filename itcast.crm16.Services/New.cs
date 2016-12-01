@@ -15,24 +15,24 @@ namespace itcast.crm16.Services
     using itcast.crm16.IServices;
     using itcast.crm16.model;
     using itcast.crm16.IRepository;
-    public partial class NewServices:BaseBLL<New>,INewServices
+    public partial class NewServices : BaseBLL<New>, INewServices
     {
-    INewRepository dal;
-      public NewServices(INewRepository dal)
+        INewRepository dal;
+        public NewServices(INewRepository dal)
         {
-    	this.dal=dal;
-    	base.basedal=dal; 
-    	}
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
-       
+            this.dal = dal;
+            base.basedal = dal;
+        }
+
+
+
+        public List<New> NewPageList(int index, int typeId, out int count)
+        {
+            if (typeId > 0)
+            {
+                return dal.QueryByPage(index, 10, out count, c => c.TypeId == typeId && c.IsDelete == 0, c => c.id);
+            }
+            return dal.QueryByPage(index, 10, out count, c => c.IsDelete == 0, c => c.id);
+        }
     }
 }

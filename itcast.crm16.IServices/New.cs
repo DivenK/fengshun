@@ -15,8 +15,8 @@ namespace itcast.crm16.IServices
     using itcast.crm16.model;
     public partial interface INewServices:IBaseBLL<New>
     {
-       
-       
+
+     List<New> NewPageList(int index, int typeId, out int count);
        
        
        

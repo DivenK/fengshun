@@ -1,17 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="FS_SiteModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“FS_Site.dbo.Manage”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="Manage">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="Title" />
-      <PropertyRef Name="Conter" />
-      <PropertyRef Name="CreateTime" />
-      <PropertyRef Name="Creator" />
-      <PropertyRef Name="Author" />
-      <PropertyRef Name="Praise" />
-      <PropertyRef Name="Look" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Title" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -22,21 +13,9 @@
     <Property Name="Praise" Type="int" Nullable="false" />
     <Property Name="Look" Type="int" Nullable="false" />
   </EntityType>
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“FS_Site.dbo.New”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="New">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="Name" />
-      <PropertyRef Name="Conent" />
-      <PropertyRef Name="IsComment" />
-      <PropertyRef Name="IsDelete" />
-      <PropertyRef Name="Author" />
-      <PropertyRef Name="CreatTime" />
-      <PropertyRef Name="Creator" />
-      <PropertyRef Name="Praise" />
-      <PropertyRef Name="Look" />
-      <PropertyRef Name="display" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="Name" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -51,15 +30,9 @@
     <Property Name="Look" Type="int" Nullable="false" />
     <Property Name="display" Type="int" Nullable="false" />
   </EntityType>
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“FS_Site.dbo.NewType”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="NewType">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="TypeName" />
-      <PropertyRef Name="CreatTime" />
-      <PropertyRef Name="Creator" />
-      <PropertyRef Name="IsDelete" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="TypeName" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -136,15 +109,9 @@
     <Property Name="uID" Type="int" Nullable="false" />
     <Property Name="rID" Type="int" Nullable="false" />
   </EntityType>
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“FS_Site.dbo.User”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="User">
     <Key>
       <PropertyRef Name="UserId" />
-      <PropertyRef Name="UserName" />
-      <PropertyRef Name="UserPwd" />
-      <PropertyRef Name="CreatTime" />
-      <PropertyRef Name="IsDelete" />
     </Key>
     <Property Name="UserId" Type="int" Nullable="false" />
     <Property Name="UserName" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -153,15 +120,9 @@
     <Property Name="CreatTime" Type="datetime" Nullable="false" />
     <Property Name="IsDelete" Type="int" Nullable="false" />
   </EntityType>
-  <!--生成过程中发现错误:
-警告 6002: 表/视图“FS_Site.dbo.VipUser”未定义主键。已推断出该键，并将定义创建为只读的表/视图。-->
   <EntityType Name="VipUser">
     <Key>
       <PropertyRef Name="id" />
-      <PropertyRef Name="VipName" />
-      <PropertyRef Name="VipPwd" />
-      <PropertyRef Name="Company" />
-      <PropertyRef Name="IsDelete" />
     </Key>
     <Property Name="id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="VipName" Type="nvarchar" MaxLength="50" Nullable="false" />
@@ -195,67 +156,15 @@
     </ReferentialConstraint>
   </Association>
   <EntityContainer Name="FS_SiteModelStoreContainer">
+    <EntitySet Name="Manage" EntityType="Self.Manage" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="New" EntityType="Self.New" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="NewType" EntityType="Self.NewType" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysMenus" EntityType="Self.sysMenus" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysRole" EntityType="Self.sysRole" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysUserInfo" EntityType="Self.sysUserInfo" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="sysUserInfo_Role" EntityType="Self.sysUserInfo_Role" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="Manage" EntityType="Self.Manage" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[Manage].[id] AS [id], 
-[Manage].[Title] AS [Title], 
-[Manage].[Conter] AS [Conter], 
-[Manage].[CreateTime] AS [CreateTime], 
-[Manage].[Creator] AS [Creator], 
-[Manage].[Author] AS [Author], 
-[Manage].[Praise] AS [Praise], 
-[Manage].[Look] AS [Look]
-FROM [dbo].[Manage] AS [Manage]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="New" EntityType="Self.New" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[New].[id] AS [id], 
-[New].[Name] AS [Name], 
-[New].[Conent] AS [Conent], 
-[New].[IsComment] AS [IsComment], 
-[New].[IsDelete] AS [IsDelete], 
-[New].[Author] AS [Author], 
-[New].[TypeId] AS [TypeId], 
-[New].[CreatTime] AS [CreatTime], 
-[New].[Creator] AS [Creator], 
-[New].[Praise] AS [Praise], 
-[New].[Look] AS [Look], 
-[New].[display] AS [display]
-FROM [dbo].[New] AS [New]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="NewType" EntityType="Self.NewType" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[NewType].[id] AS [id], 
-[NewType].[TypeName] AS [TypeName], 
-[NewType].[CreatTime] AS [CreatTime], 
-[NewType].[Creator] AS [Creator], 
-[NewType].[IsDelete] AS [IsDelete]
-FROM [dbo].[NewType] AS [NewType]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="User" EntityType="Self.User" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[User].[UserId] AS [UserId], 
-[User].[UserName] AS [UserName], 
-[User].[UserPwd] AS [UserPwd], 
-[User].[Name] AS [Name], 
-[User].[CreatTime] AS [CreatTime], 
-[User].[IsDelete] AS [IsDelete]
-FROM [dbo].[User] AS [User]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="VipUser" EntityType="Self.VipUser" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-[VipUser].[id] AS [id], 
-[VipUser].[VipName] AS [VipName], 
-[VipUser].[VipPwd] AS [VipPwd], 
-[VipUser].[Company] AS [Company], 
-[VipUser].[CreatTime] AS [CreatTime], 
-[VipUser].[IsDelete] AS [IsDelete]
-FROM [dbo].[VipUser] AS [VipUser]</DefiningQuery>
-    </EntitySet>
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="VipUser" EntityType="Self.VipUser" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_sysUserInfo_Role_sysRole" Association="Self.FK_sysUserInfo_Role_sysRole">
       <End Role="sysRole" EntitySet="sysRole" />
       <End Role="sysUserInfo_Role" EntitySet="sysUserInfo_Role" />
