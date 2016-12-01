@@ -23,3 +23,8 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.site\bin\itcast.crm16.Reposit
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.pdb
+D:\fsProject\fengshun\itcast.crm16.site\bin\itcast.crm16.Repository.dll
+D:\fsProject\fengshun\itcast.crm16.site\bin\itcast.crm16.Repository.pdb
+D:\fsProject\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.csprojResolveAssemblyReference.cache
+D:\fsProject\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.dll
+D:\fsProject\fengshun\itcast.crm16.Repository\obj\Debug\itcast.crm16.Repository.pdb

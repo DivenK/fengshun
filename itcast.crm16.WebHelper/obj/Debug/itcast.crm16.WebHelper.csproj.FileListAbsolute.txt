@@ -130,3 +130,28 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\S
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.pdb
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.WebHelper.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.WebHelper.pdb
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\Autofac.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.Common.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.IServices.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.model.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.Mvc.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.WebPages.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\EntityFramework.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.Common.pdb
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.IServices.pdb
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\itcast.crm16.model.pdb
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\Autofac.xml
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.Mvc.xml
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.WebPages.xml
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\EntityFramework.xml
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web.WebPages.resources.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\bin\Debug\zh-Hans\System.Web.WebPages.Deployment.resources.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.csprojResolveAssemblyReference.cache
+D:\fsProject\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.dll
+D:\fsProject\fengshun\itcast.crm16.WebHelper\obj\Debug\itcast.crm16.WebHelper.pdb

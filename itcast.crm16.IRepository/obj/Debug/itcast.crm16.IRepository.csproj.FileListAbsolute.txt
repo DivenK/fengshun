@@ -60,3 +60,16 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\bin\Debug\zh-Hans
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.pdb
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.IRepository.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.IRepository.pdb
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.model.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\EntityFramework.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\System.Web.Mvc.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\itcast.crm16.model.pdb
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\EntityFramework.xml
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\System.Web.Mvc.xml
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.csprojResolveAssemblyReference.cache
+D:\fsProject\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.dll
+D:\fsProject\fengshun\itcast.crm16.IRepository\obj\Debug\itcast.crm16.IRepository.pdb

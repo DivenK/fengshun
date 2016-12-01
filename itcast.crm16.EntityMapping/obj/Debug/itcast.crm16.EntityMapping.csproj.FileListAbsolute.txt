@@ -76,3 +76,17 @@ D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.EntityMapping\bin\Debug\zh-Ha
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
 D:\Fly Deam\丰顺商会\CRM\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.EntityMapping.pdb
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\AutoMapper.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\itcast.crm16.model.pdb
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\EntityFramework.xml
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\System.Web.Mvc.xml
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\EntityFramework.resources.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\bin\Debug\zh-Hans\System.Web.Mvc.resources.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.csprojResolveAssemblyReference.cache
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.dll
+D:\fsProject\fengshun\itcast.crm16.EntityMapping\obj\Debug\itcast.crm16.EntityMapping.pdb

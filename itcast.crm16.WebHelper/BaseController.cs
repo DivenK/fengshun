@@ -32,6 +32,7 @@ namespace itcast.crm16.WebHelper
         protected IsysUserInfoServices userinfoSer;
         protected INewServices news;
         protected INewTypeServices newsType;
+        protected IManageServices manageSer;
 
         public BaseController(IsysMenusServices mSer)
         {
