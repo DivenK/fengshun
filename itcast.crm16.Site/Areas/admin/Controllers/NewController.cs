@@ -6,6 +6,7 @@ using System.Web.Mvc;
 using itcast.crm16.WebHelper;
 using itcast.crm16.WebHelper.Attrs;
 using itcast.crm16.IServices;
+using itcast.crm16.Site.Models;
 namespace itcast.crm16.Site.Areas.admin.Controllers
 {
     [SkipCheckLogin]
@@ -20,11 +21,27 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         }
         public ActionResult Index()
         {
-            ViewBag.newList = news.QueryWhere(c => c.IsDelete == 0);
-            ViewBag.newsType = newsType.QueryWhere(c => c.IsDelete == 0);
-            ViewBag.TotalPage = TotalPage = (ViewBag.newList as List<model.New>).Count;
-            ViewBag.PageSize = pageSize;
-            ViewBag.PageCount = GetPageCount();
+            int index = 1;
+            int count = 0;
+            
+            var list = newsType.QueryWhere(c => c.IsDelete == 0);
+           var newlist = news.NewPageList(index, 0, out count).Select(c => new NewViewModel
+            {
+                id = c.id,
+                TypeName = list.Where(s => s.id == c.TypeId).First().TypeName,
+                Name = c.Name,
+                Conent = c.Conent.Substring(0, 4) + "...",
+                Author = c.Author,
+                display = c.display,
+                CreatTimeStr = c.CreatTime.ToString(),
+                TypeId = c.TypeId,
+                CreatTime = c.CreatTime,
+                displayBool = c.display == 0 ? true : false
+            }).ToList();
+            ViewBag.newList = newlist;
+            ViewBag.newsType = list;
+            TotalPage = count;
+            SetViewBagPage();
             return View();
         }
         /// <summary>
@@ -34,7 +51,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         /// <param name="id"></param>
         /// <returns></returns>
         [ValidateInput(false)]//防止对文本验证，保存不了HTML元素
-        public ActionResult UpdateNews(string Name,string Conent,int TypeId, int id)
+        public ActionResult UpdateNews(string Name, string Conent, int TypeId, int id)
         {
             model.New newModel = new model.New();
             newModel.Name = Name;
@@ -51,7 +68,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
                 if (id > 0)
                 {
 
-                    news.Edit(newModel, new string[] { "Name", "Conent", "IsComment", "TypeId", "display"});
+                    news.Edit(newModel, new string[] { "Name", "Conent", "IsComment", "TypeId", "display" });
                 }
                 else
                 {
@@ -75,9 +92,11 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         {
             if (id > 0)
             {
-                model.New model = new crm16.model.New() {
-                id=id,
-                IsDelete=1};
+                model.New model = new crm16.model.New()
+                {
+                    id = id,
+                    IsDelete = 1
+                };
                 try
                 {
                     news.Edit(model, new string[] { "IsDelete" });
@@ -86,7 +105,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
                 }
                 catch (Exception ex)
                 {
-                    return WriteError("删除失败："+ex.Message);
+                    return WriteError("删除失败：" + ex.Message);
                 }
             }
             return WriteError("删除失败:选择值参数为空，请在尝试");
@@ -96,14 +115,14 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
         /// </summary>
         /// <param name="id"></param>
         /// <returns></returns>
-        public ActionResult UpdateDispay(int id)
+        public ActionResult UpdateDispay(int id, int display)
         {
             if (id > 0)
             {
                 model.New model = new crm16.model.New()
                 {
                     id = id,
-                    display = 1
+                    display = display
                 };
                 try
                 {
@@ -121,7 +140,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
 
         public ActionResult GetModel(int id)
         {
-            if (id>0)
+            if (id > 0)
             {
                 var model = news.QueryWhere(c => c.IsDelete == 0 && c.id == id).FirstOrDefault();
                 return Json(model);
@@ -131,19 +150,23 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
 
         public ActionResult GetList(int index, int typeId)
         {
-            int count=0;
-            var list= newsType.QueryWhere(c => c.IsDelete == 0);
-            var pagelist=news.NewPageList(index, typeId, out count).Select(c => new { 
-                c.id,
-                list.Where(s=>s.id==c.TypeId).First().TypeName,
-                c.Name,
-                c.Conent,
-                c.Author,
-                c.display,
-                c.CreatTime
+            int count = 0;
+            var list = newsType.QueryWhere(c => c.IsDelete == 0);
+            var pagelist = news.NewPageList(index, typeId, out count).Select(c => new NewViewModel
+            {
+                id = c.id,
+                TypeName = list.Where(s => s.id == c.TypeId).First().TypeName,
+                Name = c.Name,
+                Conent = c.Conent.Substring(0,4)+"...",
+                Author = c.Author,
+                display = c.display,
+                CreatTimeStr = c.CreatTime.ToString(),
+                TypeId=c.TypeId,
+                CreatTime=c.CreatTime,
+                displayBool= c.display==0?true:false
             });
-            var page = new { index = index, count=count};
-            return Json(new { page=page,rows=pagelist });
+            var page = new { index = index, count = count };
+            return Json(new { page = page, rows = pagelist });
         }
     }
 }

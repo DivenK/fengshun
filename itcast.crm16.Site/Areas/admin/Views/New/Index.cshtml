@@ -1,4 +1,4 @@
-﻿@using itcast.crm16.model;
+﻿@using itcast.crm16.Site.Models;
 @{
     ViewBag.Title = "首页";
     Layout = "~/Areas/admin/Views/Shared/AdminMaster.cshtml";
@@ -44,15 +44,15 @@
                             </tr>
                         </thead>
                         <tbody id="newTbody">
-                            @foreach (New item in  (ViewBag.newList as List<New>))
+                            @foreach (NewViewModel item in  (ViewBag.newList as List<NewViewModel>))
                             {
                                 <tr>
                                 <td><input type="checkbox" /></td>
                                 <td>1</td>
-                                <td>@((ViewBag.newsType as List<NewType>).Where(c => c.id == item.TypeId).FirstOrDefault().TypeName)</td>
+                                <td>@(item.TypeName)</td>
                                 <td>@item.Name</td>
                                 <td class="am-hide-sm-only">@item.Conent.Substring(0,4).....</td>
-                                <td class="am-hide-sm-only"><input type="checkbox" class="am-switch am-round am-switch-success" checked  style="margin-top:5px"/></td>
+                                <td class="am-hide-sm-only" data-id="@item.id"><input type="checkbox" class="am-switch am-round am-switch-success  newDisplay" @(item.displayBool?"Checked":"") /></td>
                                 <td class="am-hide-sm-only">@item.Author</td>
                                 <td class="am-hide-sm-only">@item.CreatTime</td>
                                 <td>
