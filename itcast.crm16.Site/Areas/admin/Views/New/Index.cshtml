@@ -51,16 +51,16 @@
                                 <td>1</td>
                                 <td>@((ViewBag.newsType as List<NewType>).Where(c => c.id == item.TypeId).FirstOrDefault().TypeName)</td>
                                 <td>@item.Name</td>
-                                <td class="am-hide-sm-only">@item.Conent.Substring(0,10).....</td>
+                                <td class="am-hide-sm-only">@item.Conent.Substring(0,4).....</td>
                                 <td class="am-hide-sm-only"><input type="checkbox" class="am-switch am-round am-switch-success" checked  style="margin-top:5px"/></td>
                                 <td class="am-hide-sm-only">@item.Author</td>
                                 <td class="am-hide-sm-only">@item.CreatTime</td>
                                 <td>
                                     <div class="newtableBTN">
                                         <div class="am-btn-group am-btn-group-xs">
-                                            <button class="am-btn am-btn-default am-btn-xs am-text-secondary newEdit" id="newEdit" data-id="@item.id"><span class="am-icon-pencil-square-o"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span> 编辑</button>
+                                            <a class="am-btn am-btn-default am-btn-xs am-text-secondary newEdit" id="newEdit" data-id="@item.id"><span class="am-icon-pencil-square-o"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span> 编辑</a>
 
-                                            <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only newDel"  data-id="@item.id"><span class="am-icon-trash-o"></span> 删除</button>
+                                            <a class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only newDel"  data-id="@item.id"><span class="am-icon-trash-o"></span> 删除</a>
                                         </div>
                                     </div>
                                 </td>

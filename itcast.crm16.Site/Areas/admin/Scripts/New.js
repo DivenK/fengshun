@@ -53,7 +53,6 @@
                     bfeMsgBox.error("", result.msg);
                 }
                 AjaxGetList(1, 0);
-             
             });
     })
 
@@ -77,7 +76,7 @@
         });
     });
 
- $('.newDel').click(function () {
+    $('.newDel').click(function () {
         var id = $(this).attr('data-id');
         $('#my-confirm-Del').modal({
             relatedTarget: this,
@@ -110,13 +109,13 @@ function SetPageHtml() {
     var pageCount = $("#pageDemo").attr("data-PageCount");
     var pageIndex = $("#pageDemo").attr("data-indexPage");
     $('#pageDemo').page({
-        pages: 3,
+        pages: pageCount,
         first: "首页", //设置false则不显示，默认为false  
         last: "尾页", //设置false则不显示，默认为false      
         prev: '<', //若不显示，设置false即可，默认为上一页
         next: '>', //若不显示，设置false即可，默认为下一页
-        groups: 3, //连续显示分页数
-        jump: function () { }//这里就是去异步请求方法
+        groups: 5, //连续显示分页数
+        jump: AjaxGetList(1,0)//这里就是去异步请求方法
     });
 }
 
