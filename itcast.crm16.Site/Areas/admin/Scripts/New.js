@@ -40,9 +40,20 @@
         $.post("../New/UpdateNews",
             { "Conent": newModel.Conent, "Name": newModel.Name, "TypeId": newModel.TypeId, "id": id },
             function (result) {
-                alert(result);
-                AjaxGetList(1, 0);
                 $modal.modal('close');
+                if (result.statu == 0) {
+                    var message = '发布新闻';
+                    if (id > 0)
+                    {
+                        message= '编辑新闻';
+                    }
+                    bfeMsgBox.success("", message+result.msg);
+                    }
+                else{
+                    bfeMsgBox.error("", result.msg);
+                }
+                AjaxGetList(1, 0);
+             
             });
     })
 

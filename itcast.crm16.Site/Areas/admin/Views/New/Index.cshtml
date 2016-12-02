@@ -11,7 +11,6 @@
                 <div class="am-btn-toolbar">
                     <div class="am-btn-group am-btn-group-xs">
                         <button type="button" class="am-btn am-btn-secondary js-modal-open" id="addNews"><span class="am-icon-plus"></span> 发布新闻</button>
-                        <button type="button" class="am-btn am-btn-secondary js-modal-open" id="addss"><span class="am-icon-plus"></span> 弹窗</button>
                     </div>
                 </div>
             </div>
@@ -30,7 +29,7 @@
         <div class="am-g">
             <div class="am-u-sm-12">
                 <form class="am-form">
-                    <table class="am-table am-table-striped am-table-hover table-main">
+                    <table class="am-table am-table-striped am-table-hover  table-main am-table-centered">
                         <thead>
                             <tr>
                                 <th class="table-check"><input type="checkbox" /></th>
@@ -53,14 +52,14 @@
                                 <td>@((ViewBag.newsType as List<NewType>).Where(c => c.id == item.TypeId).FirstOrDefault().TypeName)</td>
                                 <td>@item.Name</td>
                                 <td class="am-hide-sm-only">@item.Conent.Substring(0,10).....</td>
-                                <td class="am-hide-sm-only">@item.Look</td>
+                                <td class="am-hide-sm-only"><input type="checkbox" class="am-switch am-round am-switch-success" checked  style="margin-top:5px"/></td>
                                 <td class="am-hide-sm-only">@item.Author</td>
                                 <td class="am-hide-sm-only">@item.CreatTime</td>
                                 <td>
-                                    <div class="">
+                                    <div class="newtableBTN">
                                         <div class="am-btn-group am-btn-group-xs">
                                             <button class="am-btn am-btn-default am-btn-xs am-text-secondary newEdit" id="newEdit" data-id="@item.id"><span class="am-icon-pencil-square-o"><i class="fa fa-pencil-square-o" aria-hidden="true"></i></span> 编辑</button>
-                                          
+
                                             <button class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only newDel"  data-id="@item.id"><span class="am-icon-trash-o"></span> 删除</button>
                                         </div>
                                     </div>
@@ -72,7 +71,7 @@
                     <div class="am-cf">
                         共 <span id="new-pageCount">@ViewBag.TotalPage</span> 条记录
                         <div class="am-fr" id="pageDemo" date-pageSize="@ViewBag.PageSize" date-TotalPage="@ViewBag.TotalPage" data-indexPage="1" data-PageCount="@ViewBag.PageCount">
-                          
+
                         </div>
                     </div>
                     <hr />
@@ -134,7 +133,7 @@
 <script src="~/Areas/admin/Scripts/New.js"></script>
 
 @section Scripts{
-    
+
     @*富文本工具栏显示的字段toolbars: [
  [
      'anchor', //锚点
@@ -234,16 +233,16 @@
         var editorOption = {
             initialFrameWidth: 700,
             initialFrameHeight: 450,
-            
+
             autoHeightEnabled:false,//设置滚动条出现
              toolbars: [
 ['source', 'undo', 'redo', 'bold', 'italic', 'indent',
-'underline','fontborder', 'backcolor', 'fontsize', 'fontfamily', 
-'justifyleft', 'justifyright','justifycenter', 'justifyjustify', 
+'underline','fontborder', 'backcolor', 'fontsize', 'fontfamily',
+'justifyleft', 'justifyright','justifycenter', 'justifyjustify',
 'strikethrough','superscript', 'subscript', 'removeformat',
 'formatmatch', 'autotypeset', 'blockquote', 'pasteplain', '|', 'print', 'date',
     'insertimage','map',
- 'forecolor', 'backcolor','insertorderedlist', 'insertunorderedlist', 
+ 'forecolor', 'backcolor','insertorderedlist', 'insertunorderedlist',
 'selectall', 'cleardoc', 'link', 'unlink','emotion', 'help']
           ]
         };
@@ -251,7 +250,7 @@
         editor.addListener("ready", function () {
         // editor准备好之后才可以使用
             editor.setContent("");
-    
+
         });
         editor.render('doc-ta-1');  //绑定id
     </script>
