@@ -9,7 +9,7 @@
       if (($target).hasClass('js-modal-open')) {
         $modal.modal();//弹起
       } else if (($target).hasClass('js-modal-close')) {
-        $modal.modal('close');//关闭
+        $modal.modal('close');//关闭  
       } else {
         $modal.modal('toggle');
       }
