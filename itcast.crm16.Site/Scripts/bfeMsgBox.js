@@ -28,7 +28,7 @@
             }
 
             function success(title,content) {
-                toastr.success(content, title);
+                  swal(title || '成功', content || '成功', bfeMsgBoxType.success);
             }
 
             function confirm(content, callback, title) {

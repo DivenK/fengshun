@@ -41,7 +41,7 @@
             { "Conent": newModel.Conent, "Name": newModel.Name, "TypeId": newModel.TypeId, "id": id },
             function (result) {
                 $modal.modal('close');
-                if (result.statu == 0) {
+                if (result.status == 0) {
                     var message = '发布新闻';
                     if (id > 0)
                     {
@@ -102,28 +102,7 @@
         });
     })
 });
-//修改的弹窗内容
-$('#addss').click(function () {
-    var id = $(this).attr('data-id');
-    var $modal = $('#doc-modal-1');
-    $modal.modal('close');
-    $modal.modal({
-        width: 900,
-        height: 800
-    });
-    //$.ajax({
-    //    url: "../New/GetModel",
-    //    data: { id: id },
-    //    type: "post",
-    //    dataType: 'json',
-    //    success: function (result) {
 
-    //    },
-    //    error: function (er) {
-    //        BackErr(er);
-    //    }
-    //});
-});
 
 
 
