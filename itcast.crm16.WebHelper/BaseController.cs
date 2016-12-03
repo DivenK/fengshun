@@ -93,11 +93,13 @@ namespace itcast.crm16.WebHelper
 
         }
         /// <summary>
-        /// 获取分页码数( 使用前记得给 TotalPage 和 pageSize 赋值)
+        /// 获取分页需要所有  ViewBag.TotalPage   ViewBag.PageSize ViewBag.PageCount
         /// </summary>
         /// <returns></returns>
-        protected int GetPageCount() {
-            return (int)Math.Ceiling(TotalPage * 1.0 / pageSize);
+        protected void SetViewBagPage() {
+            ViewBag.TotalPage = TotalPage;
+            ViewBag.PageSize = pageSize;
+            ViewBag.PageCount=(int)Math.Ceiling(TotalPage * 1.0 / pageSize);
         }
     }
 }
