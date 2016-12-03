@@ -25,7 +25,7 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
             int count = 0;
             
             var list = newsType.QueryWhere(c => c.IsDelete == 0);
-           var newlist = news.NewPageList(index, 0, out count).Select(c => new NewViewModel
+           var newlist = news.NewPageList(index, 0,"", out count).Select(c => new NewViewModel
             {
                 id = c.id,
                 TypeName = list.Where(s => s.id == c.TypeId).First().TypeName,
@@ -148,11 +148,11 @@ namespace itcast.crm16.Site.Areas.admin.Controllers
             return WriteError("修改的索引不能小于0");
         }
 
-        public ActionResult GetList(int index, int typeId)
+        public ActionResult GetList(int index, int typeId,string Name)
         {
             int count = 0;
             var list = newsType.QueryWhere(c => c.IsDelete == 0);
-            var pagelist = news.NewPageList(index, typeId, out count).Select(c => new NewViewModel
+            var pagelist = news.NewPageList(index, typeId, Name, out count).Select(c => new NewViewModel
             {
                 id = c.id,
                 TypeName = list.Where(s => s.id == c.TypeId).First().TypeName,

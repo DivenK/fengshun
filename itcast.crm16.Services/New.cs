@@ -11,10 +11,12 @@ namespace itcast.crm16.Services
 {
     using System;
     using System.Collections.Generic;
-    
+
     using itcast.crm16.IServices;
     using itcast.crm16.model;
     using itcast.crm16.IRepository;
+    using System.Linq.Expressions;
+
     public partial class NewServices : BaseBLL<New>, INewServices
     {
         INewRepository dal;
@@ -26,13 +28,23 @@ namespace itcast.crm16.Services
 
 
 
-        public List<New> NewPageList(int index, int typeId, out int count)
+        public List<New> NewPageList(int index, int typeId,string Name, out int count)
         {
+            Expression<Func<New, bool>> where = (c => c.IsDelete == 0);
             if (typeId > 0)
             {
-                return dal.QueryByPage(index, 10, out count, c => c.TypeId == typeId && c.IsDelete == 0, c => c.id);
+                if (string.IsNullOrWhiteSpace(Name))
+                {
+                    where = (c => c.IsDelete == 0 && c.TypeId == typeId);
+                }
+                else
+                { where = (c => c.IsDelete == 0 && c.TypeId == typeId && c.Name.Contains(Name)); }
             }
-            return dal.QueryByPage(index, 10, out count, c => c.IsDelete == 0, c => c.id);
+            if (!string.IsNullOrWhiteSpace(Name))
+            {
+                where = (c => c.IsDelete == 0 && c.Name.Contains(Name));
+            }
+            return dal.QueryByPage(index, 10, out count, where,c => c.id);
         }
     }
 }

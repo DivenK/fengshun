@@ -157,6 +157,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\NewViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\WcfChatServer\Reference.cs">
       <AutoGen>True</AutoGen>
@@ -1206,7 +1207,6 @@
     <Folder Include="Areas\chat\Views\Shared\" />
     <Folder Include="Areas\workflow\Models\" />
     <Folder Include="Areas\workflow\Views\Shared\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
