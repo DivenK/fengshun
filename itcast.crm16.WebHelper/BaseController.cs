@@ -32,9 +32,11 @@ namespace itcast.crm16.WebHelper
         protected IsysUserInfoServices userinfoSer;
         protected INewServices news;
         protected INewTypeServices newsType;
+        protected IManageServices manageSer;
         protected int pageSize=10;
         protected int TotalPage;//总叶数
         protected int PageCount;//有多少页
+
 
         public BaseController(IsysMenusServices mSer)
         {
