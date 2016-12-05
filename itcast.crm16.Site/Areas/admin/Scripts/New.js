@@ -123,6 +123,13 @@
             }
         });
     }));
+
+    //模糊查询标题
+    $('#seachNew').on('click', function (e)
+    {
+        var earchName = $('#searchName').val();
+        AjaxGetList(1, 0, earchName);
+    });
 });
 
 $(document).on('click','.am-switch',function(){
@@ -150,6 +157,7 @@ function UpdateNewDisplay(e,val)
             dataType: 'json',
             success: function (result) {
                 bfeMsgBox.success("", result.msg);
+                 AjaxGetList(1, 0);
             },
             error: function (er) {
                 bfeMsgBox.error("", result.msg);
@@ -187,13 +195,16 @@ function SetNewModel(id, title, typeId, content, d) {
 }
 
 //异步获取数据并更新列表
-function AjaxGetList(index, typeId) {
+function AjaxGetList(index, typeId, Name) {
+    $('#my-modal-loading').modal();//正在加载...
+    Name= $('#searchName').val();
     $.ajax({
         url: "../New/GetList",
-        data: { index: index, typeId: typeId },
+        data: { index: index, typeId: typeId,Name:Name},
         type: "post",
         dataType: 'json',
         success: function (result) {
+             $('#my-modal-loading').modal('close');
             var htmlTem = '';
             SetAllCount(result.page.count);
             result.rows.forEach(function (e) {
@@ -202,7 +213,7 @@ function AjaxGetList(index, typeId) {
                 htmlTem += '<td>' + e.TypeName + '</td>';
                 htmlTem += '<td>' + e.Name + '</td>';
                 htmlTem += '<td class="am-hide-sm-only">' + e.Conent + '</td>';
-                htmlTem += ' <td class="am-hide-sm-only" data-id='+e.id+'><div _switch="" class="am-switch am-round am-switch-success newDisplay ' + (e.displayBool ? 'am-active' : '') + '"><div class="am-switch-handle"><input type="checkbox"></div></div></td>';
+                htmlTem += ' <td class="am-hide-sm-only" data-id='+e.id+'><div _switch="" class="am-switch am-round am-switch-success newDisplay ' + (e.displayBool ? 'am-active' : '') + '"><div class="am-switch-handle"><input type="checkbox"  '+(e.displayBool ? 'checked' : '')+'></div></div></td>';
                 htmlTem += '  <td class="am-hide-sm-only">' + e.Author + '</td>';
                 htmlTem += ' <td class="am-hide-sm-only">' + e.CreatTimeStr + '</td>';
                 htmlTem += ' <td>';
@@ -220,6 +231,7 @@ function AjaxGetList(index, typeId) {
             //还差重新初始化分页控件
         },
         error: function (er) {
+             $('#my-modal-loading').modal('close');
             bfeMsgBox.error("", "数据更新失败！");
         }
     });
