@@ -55,15 +55,15 @@
                                             <tr>
                                                 <td>@item.id</td>
                                                 <td>@item.Title</td>
-                                                <td class="am-hide-sm-only" data-id="@item.id"><input type="checkbox" class="am-switch am-round am-switch-success  newDisplay" @(true ? "Checked" : "") /></td>
+                                                <td class="am-hide-sm-only" ><input type="checkbox" class="am-switch am-round am-switch-success  newDisplay changelook" @(item.Look==0 ? "Checked" : "") data-id="@item.id"/></td>
                                                 <td>@item.Author</td>
                                                 <td class="am-hide-sm-only">@item.Creator</td>
-                                                <td class="am-hide-sm-only">@(item.CreateTime == null ? DateTime.Now.ToString("yyyy-MM-dd HH:mm") : item.CreateTime.ToString("yyyy-MM-dd HH:mm"))</td>
+                                                <td class="am-hide-sm-only">@(item.CreateTime == null ? DateTime.Now.ToString("yyyy-MM-dd HH:mm") : item.CreateTime.ToString("yyyy-MM-dd HH:mm:ss"))</td>
                                                 @*<td style="color:@(item.Look==0?"green":"red")">@(item.Look == 0 ? "开启" : "关闭")</td>*@
                                                 <td>
                                                     <div class="am-btn-toolbar">
                                                         <div class="am-btn-group am-btn-group-xs">
-                                                            <a class="am-btn am-btn-default am-btn-xs am-text-secondary" id="btnEdit"><span class="am-icon-pencil-square-o"></span> 编辑</a>
+                                                            <a class="am-btn am-btn-default am-btn-xs am-text-secondary edit-model" data-id="@item.id"><span class="am-icon-pencil-square-o"></span> 编辑</a>
                                                             <a class="am-btn am-btn-default am-btn-xs am-text-danger am-hide-sm-only" onclick="Del(@item.id)"><span class="am-icon-trash-o"></span> 删除</a>
                                                         </div>
                                                     </div>
